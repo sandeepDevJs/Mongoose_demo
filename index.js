@@ -1,8 +1,12 @@
 const mongoose = require("mongoose");
+
+//Making A Connection.
 mongoose.connect("mongodb://localhost:27017/mongoose_db", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
+
+//Defining A Schema.
 let schema = {
   tags: [String],
   date: {type : Date},
@@ -13,6 +17,7 @@ let schema = {
   __v: {type:Date, default:0},
 };
 
+//Creating A Courses Model.
 const Model = mongoose.model("courses", schema);
 
 //get Course
