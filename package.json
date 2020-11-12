@@ -1,0 +1,15 @@
+{
+  "name": "mongoose-basics",
+  "version": "1.0.0",
+  "description": "Monggoose basics",
+  "main": "index.js",
+  "scripts": {
+    "start": "supervisor index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "SandeepDevJs",
+  "license": "MIT",
+  "dependencies": {
+    "mongoose": "^5.10.13"
+  }
+}
