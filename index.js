@@ -49,6 +49,11 @@ async function getByPriceGreaterThan(price) {
   console.log(await Model.find({price:{$gt:price}}).select({name:0, date:0}));
 }
 
+// //OR Operator
+// async function getBy(price) {
+//   console.log(await Model.find({price:{$gt:price}}).select({name:0, date:0}));
+// }
+
 // create();
 // getCourses();
 // getCourseByName("Express");
